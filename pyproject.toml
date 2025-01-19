@@ -1,6 +1,6 @@
 [project]
 name = "cloudcoil.models.kyverno"
-version = "0.0.0"
+version = "1.12.7.0"
 description = "Versioned kyverno models for cloudcoil"
 authors = [{ name = "Sambhav Kothari", email = "sambhavs.email@gmail.com" }]
 maintainers = [{ name = "Sambhav Kothari", email = "sambhavs.email@gmail.com" }]

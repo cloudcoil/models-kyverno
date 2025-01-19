@@ -185,6 +185,7 @@ dependencies = [
     { name = "pyyaml" },
     { name = "typing-extensions", marker = "python_full_version < '3.11'" },
 ]
+sdist = { url = "https://files.pythonhosted.org/packages/8f/4d/ca024ba21bbf5d2bf5a50209c06549e54b324f580d2f57475e42ffdd12fc/cloudcoil-0.0.33.tar.gz", hash = "sha256:412add3f8b674dbd30ab5d050fe14626595a70ee2e5fe1e3742756d339dd620e", size = 304212 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/5f/0c/329abfe77302b38ba9d33a77e3c6bfc4b0862062c609c960ae9da9cf8b39/cloudcoil-0.0.33-py3-none-any.whl", hash = "sha256:c7a435a44980e31e6ad0bfe2c049d4d2c105198132e95f4d393f2c7701a47a84", size = 53112 },
 ]
