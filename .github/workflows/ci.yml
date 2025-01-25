@@ -1,3 +1,4 @@
+
 name: Run tests
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -5,11 +6,6 @@ concurrency:
 on:
   push:
     branches:
-      - main
-      - release-*
-  pull_request:
-    branches:
-      - main
       - release-*
 jobs:
   test:
@@ -52,4 +48,4 @@ jobs:
         uses: codecov/test-results-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-  
+          

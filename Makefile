@@ -1,6 +1,6 @@
 .PHONY: test
 test:
-	uv run pytest
+	uv run python -m pytest
 
 .PHONY: lint
 lint:
@@ -36,8 +36,4 @@ prepare-for-pr: fix-lint lint test
 gen-models:
 	rm -rf cloudcoil/models
 	uv run cloudcoil-model-codegen
-	sed -i.bak 's/"10m"/"PT10M"  # type: ignore/g' cloudcoil/models/kyverno/v2alpha1.py
-	rm -rf cloudcoil/models/kyverno/**.bak
 	$(MAKE) fix-lint
-
-	

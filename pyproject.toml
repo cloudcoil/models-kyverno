@@ -14,7 +14,7 @@ classifiers = [
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "cloudcoil>=0.0.31",
+    "cloudcoil>=0.2.0",
 ]
 keywords = ["cloud-native", "kubernetes", "kyverno", "pydantic", "python", "async", "cloudcoil", "cloudcoil-models"]
 
@@ -74,13 +74,16 @@ plugins = ['pydantic.mypy', 'cloudcoil.mypy']
 [tool.coverage.run]
 omit = ["cloudcoil/models/**"]
 
+[tool.hatch.build.targets.wheel]
+only-include = ["cloudcoil"]
+
 [[tool.cloudcoil.codegen.models]]
 # Unique name for the models
 # This will be used as the name for the setuptools entrypoints
 namespace = "cloudcoil.models.kyverno"
 input = "https://github.com/kyverno/kyverno/releases/download/v1.12.7/install.yaml"
 crd-namespace = "io.kyverno"
+updates = [
+    { match = "^.*v2alpha1\\.GlobalContextEntry$", jsonpath = "properties.spec.properties.apiCall.properties.refreshInterval.format", delete = true}
+]
 exclude-unknown = true
-
-[tool.hatch.build.targets.wheel]
-only-include = ["cloudcoil"]
