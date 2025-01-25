@@ -226,11 +226,11 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "cloudcoil", specifier = ">=0.2.0" }]
+requires-dist = [{ name = "cloudcoil", specifier = ">=0.3.0" }]
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "cloudcoil", extras = ["codegen", "test"], specifier = ">=0.0.14" },
+    { name = "cloudcoil", extras = ["codegen", "test"] },
     { name = "datamodel-code-generator", extras = ["http"] },
     { name = "ipython", specifier = ">=8.12.3" },
     { name = "mkdocs", specifier = ">=1.6.1" },
