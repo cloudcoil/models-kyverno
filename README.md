@@ -1,7 +1,14 @@
 # cloudcoil-models-kyverno
 
 Versioned kyverno models for cloudcoil.
+> [!WARNING]  
+> This repository is auto-generated from the [cloudcoil repository](https://github.com/cloudcoil/cloudcoil/tree/main/models/kyverno). Please do not submit pull requests here. Instead, submit them to the main repository at https://github.com/cloudcoil/cloudcoil.
+
+
 ## 🔧 Installation
+
+> [!NOTE]
+> For versioning information and compatibility, see the [Versioning Guide](https://github.com/cloudcoil/cloudcoil/blob/main/VERSIONING.md).
 
 Using [uv](https://github.com/astral-sh/uv) (recommended):
 
