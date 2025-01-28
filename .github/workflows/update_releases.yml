@@ -74,7 +74,7 @@ jobs:
         id: next_version
         run: |
           BASE_VERSION="${{ matrix.model_version }}"
-          EXISTING_TAGS=$(gh release list --exclude-drafts --json tagName --jq "[.[] | select(.tagName | startswith(\"${BASE_VERSION}.\")).tagName] | .[]")
+          EXISTING_TAGS=$(gh release list --repo ${{ github.repository }} --exclude-drafts --json tagName --jq "[.[] | select(.tagName | startswith(\"${BASE_VERSION}.\")).tagName] | .[]")
           
           # Find highest x in v{BASE_VERSION}.x
           HIGHEST_X=$(echo "$EXISTING_TAGS" | sort -V | tail -n1 | cut -d. -f3)
