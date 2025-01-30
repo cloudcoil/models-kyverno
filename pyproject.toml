@@ -81,7 +81,10 @@ only-include = ["cloudcoil"]
 # Unique name for the models
 # This will be used as the name for the setuptools entrypoints
 namespace = "cloudcoil.models.kyverno"
-input = "https://github.com/kyverno/kyverno/releases/download/v1.12.7/install.yaml"
+# Split the crl urls by comma
+input = [
+    "https://github.com/kyverno/kyverno/releases/download/v1.12.7/install.yaml",
+]
 crd-namespace = "io.kyverno"
 updates = [
     { match = "^.*v2alpha1\\.GlobalContextEntry$", jsonpath = "properties.spec.properties.apiCall.properties.refreshInterval.format", delete = true}
