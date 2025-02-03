@@ -176,7 +176,7 @@ wheels = [
 
 [[package]]
 name = "cloudcoil"
-version = "0.4.5"
+version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
@@ -184,9 +184,9 @@ dependencies = [
     { name = "pyyaml" },
     { name = "typing-extensions", marker = "python_full_version < '3.11'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/4e/ea/2d5ed16717fa20f126a410943dc6a0b55ebbd0a7911c4fff5050b1eacdab/cloudcoil-0.4.5.tar.gz", hash = "sha256:d8b1357886661094250e0d527d62fb4f6c66640d02d89a58bbb754ef09a00b1c", size = 349777 }
+sdist = { url = "https://files.pythonhosted.org/packages/1d/e4/8331c620bc9c5feb53f678cc9c42b440fa9d9a0d77b9ce6f025e26cc77f7/cloudcoil-0.4.6.tar.gz", hash = "sha256:02d4afab4374a435d61acd86e99ad8c8062047ce3ca55832819dfa23d838a797", size = 350985 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ff/20/7d1f1601a3860a408e05aca9e57afda5dde42d3a0aa9571df40f4fa00cc9/cloudcoil-0.4.5-py3-none-any.whl", hash = "sha256:7f7655a785d644eccf2fe100c884bfb4f4c067b3fbe0ed94e25d1acdab0d6f2a", size = 67902 },
+    { url = "https://files.pythonhosted.org/packages/40/48/5ba74dcccdb94cf7b3c5000f3920b32edc9543ef7145308266b3b9383de6/cloudcoil-0.4.6-py3-none-any.whl", hash = "sha256:c8365bfd10211b22221379730a23b453357898aa50031117b43969acb79a5a74", size = 67941 },
 ]
 
 [package.optional-dependencies]
