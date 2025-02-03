@@ -3,7 +3,7 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timedelta
+from datetime import datetime
 from typing import (
     Annotated,
     Any,
@@ -199,7 +199,7 @@ class ApiCall(BaseModel):
             """
             return self._set("method", value)
 
-        def refresh_interval(self, value: Optional[timedelta], /) -> Self:
+        def refresh_interval(self, value: Optional[str], /) -> Self:
             """
             RefreshInterval defines the interval in duration at which to poll the APICall.
             The duration is a sequence of decimal numbers, each with optional fraction and a unit suffix,
@@ -287,7 +287,7 @@ class ApiCall(BaseModel):
     """
     Method is the HTTP request type (GET or POST).
     """
-    refresh_interval: Annotated[Optional[timedelta], Field(alias="refreshInterval")] = "10m"
+    refresh_interval: Annotated[Optional[str], Field(alias="refreshInterval")] = "10m"
     """
     RefreshInterval defines the interval in duration at which to poll the APICall.
     The duration is a sequence of decimal numbers, each with optional fraction and a unit suffix,
