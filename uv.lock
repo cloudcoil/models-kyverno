@@ -1,4 +1,5 @@
 version = 1
+revision = 1
 requires-python = ">=3.10"
 resolution-markers = [
     "python_full_version >= '3.12' and python_full_version < '4.0'",
@@ -176,7 +177,7 @@ wheels = [
 
 [[package]]
 name = "cloudcoil"
-version = "0.5.1"
+version = "0.5.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
@@ -184,9 +185,9 @@ dependencies = [
     { name = "pyyaml" },
     { name = "typing-extensions", marker = "python_full_version < '3.11'" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1c/1b/6b883c861a3acf5a341c8e0d0e5143a8489b41b951c9dbfb7633078c3703/cloudcoil-0.5.1.tar.gz", hash = "sha256:30587f89048c5fc8b75145af9de06ebecd5fbdbdf0c6d6c5b53c0593a5669872", size = 357257 }
+sdist = { url = "https://files.pythonhosted.org/packages/3b/47/17259d67d088c62a9d4dfe4aff11b5e26cd3d8426c855e5c94ff30c0301a/cloudcoil-0.5.2.tar.gz", hash = "sha256:7258ef6bd87e8fbaac21f9c5cff4fbaf13f9ba5435a01e459e6ce177f2a60635", size = 357673 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fb/78/f64f86791531727182c57fce2860d201e21da1173e4dcb2eecbce8ca15bf/cloudcoil-0.5.1-py3-none-any.whl", hash = "sha256:65ed2657fc75be96f5d37fbab3fc13639ac04f6c595b8ff1d64af4404e01dc16", size = 69086 },
+    { url = "https://files.pythonhosted.org/packages/02/21/a6d80cdbd354355776590ecfc5829728bd849740f0f051a62c091d5e1a0a/cloudcoil-0.5.2-py3-none-any.whl", hash = "sha256:7af4b3092799d38b2a5f92f3aeb4d36ebce6fa4ffdc9102d4954e47475a63334", size = 69242 },
 ]
 
 [package.optional-dependencies]
@@ -733,7 +734,7 @@ wheels = [
 
 [[package]]
 name = "mkdocstrings"
-version = "0.28.0"
+version = "0.28.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jinja2" },
@@ -744,9 +745,9 @@ dependencies = [
     { name = "mkdocs-get-deps" },
     { name = "pymdown-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/86/4b/70522427768a4637ffac376140f362dc3d159364fb64e698667e51053d57/mkdocstrings-0.28.0.tar.gz", hash = "sha256:df20afef1eafe36ba466ae20732509ecb74237653a585f5061937e54b553b4e0", size = 3392797 }
+sdist = { url = "https://files.pythonhosted.org/packages/82/6a/3980e05d7522423dc4ca547771d16d399fc3f4266df652f624f4f4dd7890/mkdocstrings-0.28.1.tar.gz", hash = "sha256:fb64576906771b7701e8e962fd90073650ff689e95eb86e86751a66d65ab4489", size = 4551690 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/75/c3/e5a319d4de0867c1b59ff22abb93bf898f9812e934ab75dcf7fe94e85bb6/mkdocstrings-0.28.0-py3-none-any.whl", hash = "sha256:84cf3dc910614781fe0fee46ce8006fde7df6cc7cca2e3f799895fb8a9170b39", size = 4700952 },
+    { url = "https://files.pythonhosted.org/packages/6f/5d/8580b426396d8cbbe98df364ef891487c4942e36356d56bb5a6dd91f51a9/mkdocstrings-0.28.1-py3-none-any.whl", hash = "sha256:a5878ae5cd1e26f491ff084c1f9ab995687d52d39a5c558e9b7023d0e4e0b740", size = 6426938 },
 ]
 
 [[package]]
