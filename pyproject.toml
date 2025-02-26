@@ -1,6 +1,6 @@
 [project]
 name = "cloudcoil.models.kyverno"
-version = "0.0.0"
+version = "1.13.4.0"
 description = "Versioned kyverno models for cloudcoil"
 authors = [{ name = "Sambhav Kothari", email = "sambhavs.email@gmail.com" }]
 maintainers = [{ name = "Sambhav Kothari", email = "sambhavs.email@gmail.com" }]
@@ -83,7 +83,7 @@ only-include = ["cloudcoil"]
 namespace = "cloudcoil.models.kyverno"
 # Split the crl urls by comma
 input = [
-    "https://github.com/kyverno/kyverno/releases/download/v1.12.7/install.yaml",
+    "https://github.com/kyverno/kyverno/releases/download/v1.13.4/install.yaml",
 ]
 crd-namespace = "io.kyverno"
 updates = [
