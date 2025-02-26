@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        model_version: ['1.12.7']
+        model_version: ['1.13.4']
 
     steps:
       - uses: actions/checkout@v4
