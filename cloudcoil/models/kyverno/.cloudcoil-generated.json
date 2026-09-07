@@ -1,0 +1,17 @@
+[
+  "__init__.py",
+  "_lookup.py",
+  "policies/__init__.py",
+  "policies/v1.py",
+  "policies/v1alpha1.py",
+  "policies/v1beta1.py",
+  "py.typed",
+  "reports/__init__.py",
+  "reports/v1.py",
+  "v1.py",
+  "v2.py",
+  "v2alpha1.py",
+  "v2beta1.py",
+  "wgpolicyk8s_io/__init__.py",
+  "wgpolicyk8s_io/v1alpha2.py"
+]
