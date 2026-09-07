@@ -6,3 +6,10 @@ import cloudcoil.models.kyverno as kyverno
 def test_has_modules():
     modules = list(filter(lambda x: isinstance(x, ModuleType), kyverno.__dict__.values()))
     assert modules, "No modules found in kyverno"
+
+
+def test_resource_identity():
+    from cloudcoil.models.kyverno.v1 import ClusterPolicy
+
+    assert ClusterPolicy.gvk().api_version == "kyverno.io/v1"
+    assert ClusterPolicy.gvk().kind == "ClusterPolicy"

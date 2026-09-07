@@ -11,7 +11,7 @@ classifiers = [
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "cloudcoil>=0.5.0.dev0",
+    "cloudcoil>=0.7.0,<0.8",
 ]
 keywords = ["cloud-native", "kubernetes", "kyverno", "pydantic", "python", "async", "cloudcoil", "cloudcoil-models"]
 
@@ -58,12 +58,11 @@ dev = [
     "pytest-cov>=4.1.0",
     "ruff>=0.14",
     "mkdocs-autorefs",
-    "datamodel-code-generator[http]",
     "types-pyyaml>=6.0.12.20241221",
     "ipython>=8.12.3",
     "pytest-sugar>=1.0.0",
     "pytest-asyncio>=0.25.0",
-    "cloudcoil[codegen,test]"
+    "cloudcoil[codegen,test]>=0.7.0,<0.8"
 ]
 
 [tool.mypy]
@@ -76,15 +75,9 @@ omit = ["cloudcoil/models/**"]
 only-include = ["cloudcoil"]
 
 [[tool.cloudcoil.codegen.models]]
-# Unique name for the models
-# This will be used as the name for the setuptools entrypoints
 namespace = "cloudcoil.models.kyverno"
-# Split the crl urls by comma
 input = [
-    "https://github.com/kyverno/kyverno/releases/download/v1.12.7/install.yaml",
+    "https://github.com/kyverno/kyverno/releases/download/v1.19.0/install.yaml",
 ]
+# Keep the established public import paths while using schema inference.
 crd-namespace = "io.kyverno"
-updates = [
-    { match = "^.*\\.GlobalContextEntrySpec$", jsonpath = "properties.apiCall.properties.refreshInterval.format", delete = true}
-]
-exclude-unknown = true
