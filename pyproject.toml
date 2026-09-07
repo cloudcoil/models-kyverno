@@ -11,7 +11,7 @@ classifiers = [
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
-    "cloudcoil>=0.7.0,<0.8",
+    "cloudcoil>=0.7.1,<0.8",
 ]
 keywords = ["cloud-native", "kubernetes", "kyverno", "pydantic", "python", "async", "cloudcoil", "cloudcoil-models"]
 
@@ -62,7 +62,7 @@ dev = [
     "ipython>=8.12.3",
     "pytest-sugar>=1.0.0",
     "pytest-asyncio>=0.25.0",
-    "cloudcoil[codegen,test]>=0.7.0,<0.8"
+    "cloudcoil[codegen,test]>=0.7.1,<0.8"
 ]
 
 [tool.mypy]
