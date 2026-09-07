@@ -81,3 +81,7 @@ input = [
 ]
 # Keep the established public import paths while using schema inference.
 crd-namespace = "io.kyverno"
+# Kyverno uses Go durations ("10m"), not ISO 8601 durations accepted by timedelta.
+updates = [
+    { match = "^.*\\.GlobalContextEntrySpec$", jsonpath = "properties.apiCall.properties.refreshInterval.format", delete = true },
+]
