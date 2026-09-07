@@ -326,7 +326,6 @@ dev = [
     { name = "cloudcoil", extras = ["codegen", "test"], specifier = ">=0.7.1,<0.8" },
     { name = "ipython", specifier = ">=8.12.3" },
     { name = "mkdocs", specifier = ">=1.6.1" },
-    { name = "mkdocs-autorefs" },
     { name = "mkdocs-autorefs", specifier = ">=0.5.0" },
     { name = "mkdocs-material", specifier = ">=9.5.3" },
     { name = "mkdocstrings", specifier = ">=0.24.0" },
