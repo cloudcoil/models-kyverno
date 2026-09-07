@@ -57,7 +57,6 @@ dev = [
     "pytest>=8.3.4",
     "pytest-cov>=4.1.0",
     "ruff>=0.14",
-    "mkdocs-autorefs",
     "types-pyyaml>=6.0.12.20241221",
     "ipython>=8.12.3",
     "pytest-sugar>=1.0.0",
@@ -75,11 +74,11 @@ omit = ["cloudcoil/models/**"]
 only-include = ["cloudcoil"]
 
 [[tool.cloudcoil.codegen.models]]
+# Python package for generated models
 namespace = "cloudcoil.models.kyverno"
 input = [
     "https://github.com/kyverno/kyverno/releases/download/v1.19.0/install.yaml",
 ]
-# Keep the established public import paths while using schema inference.
 crd-namespace = "io.kyverno"
 # Kyverno uses Go durations ("10m"), not ISO 8601 durations accepted by timedelta.
 updates = [
