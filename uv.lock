@@ -321,7 +321,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "cloudcoil", specifier = ">=0.4.0" }]
+requires-dist = [{ name = "cloudcoil", specifier = ">=0.5.0.dev0" }]
 
 [package.metadata.requires-dev]
 dev = [
