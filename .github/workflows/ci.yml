@@ -4,8 +4,10 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 on:
+  pull_request:
   push:
     branches:
+      - main
       - release-*
 jobs:
   test:
@@ -29,6 +31,9 @@ jobs:
 
       - name: Install dependencies
         run: uv sync --all-extras --dev
+
+      - name: Generate models
+        run: make gen-models
 
       - name: Run Checks
         run: make -j8 lint test

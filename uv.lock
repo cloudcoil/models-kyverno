@@ -302,7 +302,6 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "cloudcoil", extra = ["codegen", "test"] },
-    { name = "datamodel-code-generator", extra = ["http"] },
     { name = "ipython" },
     { name = "mkdocs" },
     { name = "mkdocs-autorefs" },
@@ -320,12 +319,11 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "cloudcoil", specifier = ">=0.5.0.dev0" }]
+requires-dist = [{ name = "cloudcoil", specifier = ">=0.7.1,<0.8" }]
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "cloudcoil", extras = ["codegen", "test"] },
-    { name = "datamodel-code-generator", extras = ["http"] },
+    { name = "cloudcoil", extras = ["codegen", "test"], specifier = ">=0.7.1,<0.8" },
     { name = "ipython", specifier = ">=8.12.3" },
     { name = "mkdocs", specifier = ">=1.6.1" },
     { name = "mkdocs-autorefs" },
